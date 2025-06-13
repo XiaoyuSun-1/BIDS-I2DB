@@ -127,69 +127,7 @@ for train_path, val_path in kf.split(data_path):
 
 
 
-
-        
-# # ======= Correct place for visualization (AFTER loading/training) =======
-#         from matplotlib.colors import ListedColormap
-#         import numpy as np
-#         import tensorflow as tf
-
-# # Colormap
-#         cmap = ListedColormap(["black", "red", "green", "blue"])
-
-# # Select patient and slice
-#         patient, slice_idx = "TRAIN030", 24
-#         img_path = f"RetouchData/{dataset_name}/retouch_data/{patient}/{patient}_oct_{slice_idx:03d}.jpg"
-
-# # Load image and ground-truth mask
-#         img, mask = data_reader.load_image(tf.constant(img_path))
-#         gt_mask = mask.numpy()[..., 0].astype(int)
-
-# # Model prediction (connectivity maps)
-#         y_pred_full = model.predict(img[None], verbose=0)[0]
-#         conn_maps = y_pred_full[..., :32]
-
-# # Bilateral voting
-#         prob_maps = []
-#         for cls in range(4):
-#             conn_cls = conn_maps[..., cls*8:(cls+1)*8]
-#             conn_cls_expanded = tf.expand_dims(conn_cls, axis=0)
-#             prob_map_cls = loss_funcs.bv_test_new(conn_cls_expanded)
-#             prob_maps.append(prob_map_cls.numpy())
-
-# # Stack and predict
-#         prob_stack = np.stack(prob_maps, axis=-1)
-#         pred_mask = np.argmax(prob_stack, axis=-1)
-
-# # Visualize
-#         fig, axs = plt.subplots(1, 3, figsize=(12, 4))
-#         axs[0].imshow(img[..., 0], cmap='gray')
-#         axs[0].axis('off')
-#         axs[0].set_title("OCT Image")
-
-#         axs[1].imshow(gt_mask, cmap=cmap, vmin=0, vmax=3)
-#         axs[1].axis('off')
-#         axs[1].set_title("Ground Truth Mask")
-
-#         axs[2].imshow(pred_mask, cmap=cmap, vmin=0, vmax=3)
-#         axs[2].axis('off')
-#         axs[2].set_title("Predicted Mask")
-
-#         plt.tight_layout()
-#         plt.show()
-# # =========================================================================
-
-
-
-
-
-
-
-
-
-
-
-        # ======= Correct place for visualization (AFTER loading/training) =======
+        # ======= visualization (AFTER loading/training) =======
         from matplotlib.colors import ListedColormap
         import numpy as np
         import tensorflow as tf
