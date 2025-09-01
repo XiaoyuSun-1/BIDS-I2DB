@@ -1,12 +1,11 @@
 # RetiFluidNet — Self-Adaptive Multi-Attention U-Net for Retinal OCT Fluid Segmentation
 
-**Paper:** Rasti, Reza et al. “[RetiFluidNet: A Self-Adaptive and Multi-Attention Deep Convolutional Network for Retinal OCT Fluid Segmentation.](doi:10.1109/TMI.2022.3228285)” IEEE transactions on medical imaging vol. 42,5 (2023): 1413-1423. doi:10.1109/TMI.2022.3228285
+**Paper:** Rasti, Reza et al. “RetiFluidNet: A Self-Adaptive and Multi-Attention Deep Convolutional Network for Retinal OCT Fluid Segmentation.” IEEE transactions on medical imaging vol. 42,5 (2023): 1413-1423. doi:10.1109/TMI.2022.3228285
  
 **RetiFluidNet original github:** https://github.com/aidialab/RetiFluidNet
 
-## Setup
+## Environment setup 
 
-## Environment (Conda)
 
 ```bash
 cd RetiFluidNet
