@@ -3,7 +3,7 @@
 **RetiFluidNet (task-specific)** vs **VisionFM (foundation)** for segmenting intraretinal fluid (IRF), subretinal fluid (SRF), and pigment epithelial detachment (PED) on OCT B-scans. Using the RETOUCH benchmark, we build two reproducible pipelines: TensorFlow for RetiFluidNet and PyTorch for VisionFM, run 3-fold cross-validation across Spectralis and Cirrus devices, and evaluate pixel-level accuracy (Acc, BAcc, Dice, IoU) and patient and slice level agreement via fluid-proportion quantification and ICC. Overall, RFN delivers consistently stronger segmentation accuracy and more stable fluid quantification than VFM with qualitative examples illustrating cleaner fluid boundaries.
 
 - **Pipelines:** Refer to the subfolders: RetiFluidNet for the task-specific model, and VisionFM for the foundation model. 
-- **Dataset:** [RETOUCH—Retinal OCT Fluid Challenge](https://retouch.grand-challenge.org/)  
+- **Dataset:** RETOUCH—Retinal OCT Fluid Challenge(https://retouch.grand-challenge.org/)  
 - **Metrics:** Dice (DSC), Balanced Accuracy (BACC), ICC for fluid proportion (patient-sum, all-slices, fluid-only)  
 - **Devices:** Spectralis & Cirrus; seed = 3407; 3-fold CV
 
