@@ -29,10 +29,6 @@ We compare 24 Spectralis volumes (1176 B-scans at 512×496 pixels) and 24 Cirrus
   <br><em><strong>Figure 2.</strong> Example Spectralis (top) and Cirrus (bottom) slices with GT, RFN, and VFM segmentations.</em>
 </p>
 
----
-
-## Citation
-
 
 ## Acknowledgments
 BIDS@I2DB Summer Research Internship, Institute for Informatics, Data Science & Biostatistics, Washington University School of Medicine.
