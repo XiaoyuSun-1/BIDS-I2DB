@@ -5,12 +5,11 @@
 **RetiFluidNet original github:** https://github.com/aidialab/RetiFluidNet
 
 ## Environment setup 
-
-
 ```bash
 cd RetiFluidNet
 conda env create -f environment.yml
-conda activate retifluidnet   # if your environment.yml uses a different name, activate that
+conda activate retifluidnet  
+```
 
 ## Data Layout
 
@@ -18,12 +17,12 @@ Add a RetouchData folder under this RetifluidNet folder with the following struc
 
 RetouchData/
 ├── Spectralis/
-│   ├── raw_bscans/            # The raw bscans from the RETOUCH dataser
-│   └── raw_masks/  
-│   └── retouch_data/          # OCT B-scans (PNG/JPG)
-│   └── retouch_data_mask/     # masks {0=BG, 1=IRF, 2=SRF, 3=PED}
+│   ├── raw_bscans/            # The raw bscans (.raw & .mhd) from the RETOUCH dataset
+│   └── raw_masks/             # The raw masks (.raw & .mhd) from the RETOUCH dataset
+│   └── retouch_data/          # Create by images_Spectralis.ipynb, refer this file for more details
+│   └── retouch_data_mask/     # Create by images_Spectralis.ipynb, refer this file for more details
 └── Cirrus/
-    ├── raw_bscans/
-    └── raw_masks/  
-    └── retouch_data/          # OCT B-scans (PNG/JPG)
-    └── retouch_data_mask/     # masks {0=BG, 1=IRF, 2=SRF, 3=PED}
+    ├── raw_bscans/            # The raw bscans (.raw & .mhd) from the RETOUCH dataset
+    └── raw_masks/             # The raw masks (.raw & .mhd) from the RETOUCH dataset  
+    └── retouch_data/          # Create by images_Spectralis.ipynb, refer this file for more details
+    └── retouch_data_mask/     # Create by images_Spectralis.ipynb, refer this file for more details
