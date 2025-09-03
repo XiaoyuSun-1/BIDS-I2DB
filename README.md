@@ -31,7 +31,6 @@ We compare 24 Spectralis volumes (1176 B-scans at 512×496 pixels) and 24 Cirrus
 
 
 ## Acknowledgments
-BIDS@I2DB Summer Research Internship, Institute for Informatics, Data Science & Biostatistics, Washington University School of Medicine.
-All members from the CausAI lab.
+I gratefully acknowledge BIDS@I2DB Summer Research Internship, Institute for Informatics, Data Science & Biostatistics, Washington University School of Medicine for the oppotuniry. And all members from the CausAI lab for guidiance and supports.
 
 
