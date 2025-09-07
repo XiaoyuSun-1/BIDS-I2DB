@@ -14,7 +14,7 @@ conda activate retifluidnet
 ## Data Layout
 
 Add a RetouchData folder under this RetifluidNet folder with the following structure.
-
+```text
 RetouchData/
 ├── Spectralis/
 │   ├── raw_bscans/            # The raw bscans (.raw & .mhd) from the RETOUCH dataset
@@ -26,3 +26,4 @@ RetouchData/
     └── raw_masks/             # The raw masks (.raw & .mhd) from the RETOUCH dataset  
     └── retouch_data/          # Create by images_Spectralis.ipynb, refer this file for more details
     └── retouch_data_mask/     # Create by images_Spectralis.ipynb, refer this file for more details
+```
