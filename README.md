@@ -16,7 +16,8 @@ We compare 24 Spectralis volumes (1176 B-scans at 512×496 pixels) and 24 Cirrus
 
 <p align="center">
   <img src="images/summary_tables.png" alt="Table 1: Dice and BACC for RFN vs VFM" width="70%">
-  <br><em><strong>Table 1.</strong> Dice Similarity Coefficient (DSC) and Balanced Accuracy (BACC) for RFN and VFM.</em>
+  <br><em><strong>Table 1.</strong> Performance metrics of RetiFluidNet and VisionFM models on OCT fluid segmentation.</em>
+  <br><em><strong>Table 2.</strong> Mean (Standard Deviation) Inter-Observer Dice Scores from RETOUCH. </em>
 </p>
 
 <p align="center">
@@ -26,7 +27,8 @@ We compare 24 Spectralis volumes (1176 B-scans at 512×496 pixels) and 24 Cirrus
 
 <p align="center">
   <img src="images/visulizations.png" alt="Figure 2: OCT examples—GT vs RFN vs VFM (Spectralis & Cirrus)" width="85%">
-  <br><em><strong>Figure 2.</strong> Example Spectralis (top) and Cirrus (bottom) slices with GT, RFN, and VFM segmentations.</em>
+  <br><em><strong>Figure 2.</strong> Example OCT segmentation results. Left: Original OCT scans from Spectralis (top) and Cirrus (bottom) devices with
+ground truth annotations. Middle: Segmentations predicted by RetiFluidNet. Right: Segmentations predicted by VisionFM.</em>
 </p>
 
 
