@@ -42,3 +42,14 @@ Under the retifluidnet environment and folder, run:
 python train.py
 ```
 
+## Evaluations
+
+The viz_sof_icc.ipynb notebook contains the pairwise visualization with raw OCT, ground truth, and predicted segmentations. The caluclation of sum of fraction of fluid proportion and intercorrelation coefficient is also included.
+
+The treatment_explore.ipynb notebook explore the saved model on segmenting a patient from WashU unlabelled OCT dataset. Showing that the sum of fraction of fluid reduce after 16 months after anti-vegf injection.
+
+- **`viz_sof_icc.ipynb`**  
+  Side-by-side visualization of raw OCT, ground truth, and predicted segmentations per B-scan; computes **Sum-of-Fractions (SOF)** for IRF/SRF/PED at slice and **patient level**; reports **ICC(A,1)** between prediction and reference, stratified by **device** (Spectralis/Cirrus), with summary tables/plots.
+
+- **`treatment_explore.ipynb`**  
+  Applies a trained model to a **longitudinal, unlabeled** OCT series to estimate fluid masks; builds a **patient-level SOF time-series**; visualizes trends relative to **anti-VEGF** therapy to illustrate potential post-treatment reduction in fluid burden (e.g., over ~16 months).
