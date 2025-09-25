@@ -34,6 +34,14 @@ RetouchData/
 
 ## Preprocessing
 
+`dataset.py`: This file defines dataset loader, SegImgs, that control how images and masks are read, how many augmentation variants to generate, and how chosen transforms are applied during training/validation.
+
+`transforms.py`: This file provides the orifinal general-purpose transform functions used by VisionFM (we mainly use flips, Resize, NormalizeMinMax here) that can be composed into custom augmentation pipelines for both images and image–mask pairs.
+
+`transforms_retifluidnet.py`: This file contains the set of augmentations with the style from RetiFluidNet, converted from TensorFlow to PyTorch. It provides multiple variants per image, including flips, contrast, rotations, translations, for training, and simple resize/normalize for validation.
+
+Remember to download the **pretrained weight** from https://drive.google.com/file/d/1o6E-ine2QLx2pxap-c77u-SU0FjxwypA/view.
+
 ## Train
 
 ```bash
