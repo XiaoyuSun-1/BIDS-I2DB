@@ -5,16 +5,11 @@
 **VisionFM original github:** https://github.com/ABILab-CUHK/VisionFM.git
 
 ## Environment setup 
-Create the environment with conda commands:
-
+Create the environment with conda commands and install the dependencies:
 ```bash
 conda create -n vfm python=3.8
 conda activate vfm
-```
-Install the dependencies:
-```bash
-git clone https://github.com/ABILab-CUHK/VisionFM.git
-cd VisionFM
+
 pip install -r requirments.txt
 ```
 
@@ -64,3 +59,6 @@ python3 evaluation/train_seg_decoder_CV.py \
 
 ## Evaluations
 
+`summary_sof_icc.ipynb`: This file provides a RetiFluidNet style summary table for Acc, BAcc, IoU, and DSC. It also computes Sum of Fractions (SoF) for IRF/SRF/PED at slice and patient level. Building on this, it reports ICC(A,1), the intraclass correlation coefficient of the absolute agreement between prediction and reference, stratified by devices and slices.
+
+`visualizations.ipynb`: This file provides qualitative evaluation by plotting OCT images, ground-truth masks, and model-predicted segmentations side by side.
