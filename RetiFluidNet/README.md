@@ -5,8 +5,8 @@
 **RetiFluidNet original github:** https://github.com/aidialab/RetiFluidNet
 
 ## Environment setup 
+
 ```bash
-cd RetiFluidNet
 conda env create -f environment.yml
 conda activate retifluidnet  
 ```
