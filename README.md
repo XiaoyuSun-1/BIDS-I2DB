@@ -12,7 +12,7 @@
 We compare 24 Spectralis volumes (1176 B-scans at 512×496 pixels) and 24 Cirrus volumes (3072 B-scans at 512×1024 pixels). All raw files were converted to PNG and resized to 256×256 pixels, with intensities normalized to [0,1]. We then applied random translations, rotations, flips, and contrast adjustments for augmentation. Models were trained and evaluated via 3-fold cross-validation with 39648 augmented images per training fold.
 
 
-## Results at a Glance
+## Results at a glance
 
 <p align="center">
   <img src="images/summary_tables.png" alt="Table 1: Dice and BACC for RFN vs VFM" width="70%">
