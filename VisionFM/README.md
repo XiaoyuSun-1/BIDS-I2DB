@@ -41,6 +41,7 @@ RetouchData/
 `transforms_retifluidnet.py`: This file contains the set of augmentations with the style from RetiFluidNet, converted from TensorFlow to PyTorch. It provides multiple variants per image, including flips, contrast, rotations, translations, for training, and simple resize/normalize for validation.
 
 Remember to download the **pretrained weight** from https://drive.google.com/file/d/1o6E-ine2QLx2pxap-c77u-SU0FjxwypA/view.
+You can find more details here: https://github.com/ABILab-CUHK/VisionFM?tab=readme-ov-file#3-training-decoders-for-downstream-tasks.
 
 ## Train
 
@@ -60,3 +61,4 @@ python3 evaluation/train_seg_decoder_CV.py \
 ```
 
 ## Evaluations
+
